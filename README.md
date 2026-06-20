@@ -1,2 +1,1 @@
-# ai-blog
-Files used in my blog on AI
+See the README.md files for each section of this repository.
