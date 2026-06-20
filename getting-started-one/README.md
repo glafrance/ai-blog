@@ -280,7 +280,7 @@ async function main() {
   try {
     const message = await client.messages.create({
       model: "claude-opus-4-8",
-      max_tokens: 1000, // CRITICAL: Anthropic requires this explicit safety parameter
+      max_tokens: 1000, // Anthropic requires this explicit safety parameter
       messages: [
         {
           role: "user",
