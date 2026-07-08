@@ -216,7 +216,7 @@ async function main() {
   try {
     const response = await client.responses.create({
       model: "gpt-5.5",
-      input: "Write a one-sentence bedtime story about a unicorn."
+      input: "ユニコーンについての一文のベッドタイムストーリーを書いてください。"
     });
 
     // modernなResponses APIは、output_textを使って文字列トークンをまとめます
@@ -232,7 +232,7 @@ main();
 
 ---
 
-## 📄 ファイル1： `src/gemini-test.ts`
+## 📄 ファイル2： `src/gemini-test.ts`
 
 この例では、モダンなGoogle Gen AI SDKである `@google/genai` を使用します。
 
@@ -248,7 +248,7 @@ async function main() {
   try {
     const response = await ai.models.generateContent({
       model: "gemini-3.5-flash",
-      contents: "Write a one-sentence bedtime story about a unicorn."
+      contents: "ユニコーンについての一文のベッドタイムストーリーを書いてください。"
     });
 
     // 設計されたプロトタイプゲッターが、内部のJSON配列を動的に解析します
@@ -264,7 +264,7 @@ main();
 
 ---
 
-## 📄 ファイル1： `src/claude-test.ts`
+## 📄 ファイル3： `src/claude-test.ts`
 
 この例では、Anthropicの構造化された **Messages API** を使用します。
 
@@ -284,7 +284,7 @@ async function main() {
       messages: [
         {
           role: "user",
-          content: "Write a one-sentence bedtime story about a unicorn."
+          content: "ユニコーンについての一文のベッドタイムストーリーを書いてください。"
         }
       ]
     });
